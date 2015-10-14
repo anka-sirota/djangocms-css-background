@@ -4,7 +4,7 @@
 
 Fork of https://github.com/WnP/djangocms-css-background.
 
-Allows does the same thing that the djangocms-css-background does, but also allows nesting.
+Does the same thing that the djangocms-css-background does, but also allows nesting and adding inline styles. Also, app label has underscores instead of dashes.
 
 
 ## Depends
@@ -17,9 +17,9 @@ Allows does the same thing that the djangocms-css-background does, but also allo
 
 ## Installation
 
-* pip install git+git://github.com/anka-sirota/djangocms-css-background.git#egg=djangocms-css-background;
-* Syncronize the models: `python manage.py syncdb` (with south or django 1.7 use migrations)
-* Put in your INSTALLED_APPS: `INSTALLED_APPS += ('djangocms-css-background', )`
+* pip install git+git://github.com/anka-sirota/djangocms-css-background.git#egg=djangocms_css_background;
+* Syncronize the models: `python manage.py migrate`;
+* Put in your INSTALLED_APPS: `INSTALLED_APPS += ('djangocms_css_background', )`
 
 
 ## Usage
