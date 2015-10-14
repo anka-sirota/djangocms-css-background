@@ -12,9 +12,10 @@ class CssBackgroundPlugIn(CMSPluginBase):
     raw_id_fields = ('image',)
     fieldsets = (
         (None, {
-            'fields': ('bg_type', 'image', ('r', 'g', 'b', 'a')),
+            'fields': ('bg_type', 'image', ('r', 'g', 'b', 'a'), 'style'),
         }),
     )
+    allow_children = True
 
     def render(self, context, instance, placeholder):
         context.update({

@@ -20,6 +20,7 @@ class CssBackground(CMSPlugin):
     g = models.IntegerField(default=0)
     b = models.IntegerField(default=0)
     a = models.IntegerField(default=0)
+    style = models.TextField(null=True, blank=True, help_text="Additional CSS")
 
     class Meta:
         verbose_name = "css background"
