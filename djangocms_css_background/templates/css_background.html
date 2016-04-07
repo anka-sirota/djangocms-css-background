@@ -1,5 +1,5 @@
 {% load cms_tags %}
-<div style="height: 100%; width: 100%; {{ instance.css_background }}; {% if instance.style %}{{ instance.style }}{% endif %}">
+<div style="height: 100%; width: 100%; {{ instance.css_background }}; {% if instance.style %}{{ instance.style }}{% endif %}" class="l-subheader l-subheader--background">
     {% for plugin in instance.child_plugin_instances %}
     {% render_plugin plugin %}
     {% endfor %}
